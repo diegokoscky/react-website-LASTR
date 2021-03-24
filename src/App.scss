@@ -1,0 +1,17 @@
+$pColor: #242424;
+
+@mixin paragrafo {
+    font-size: 30px!important;
+    color: $pColor!important;
+}
+
+.App {
+    h1 {
+        @include paragrafo();
+    }
+
+    p {
+        color: $pColor!important;
+        font-size: 18px!important   ;
+    }
+}
