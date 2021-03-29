@@ -55,10 +55,10 @@ $colorRed: #f00946;
   .nav-item {
     height: 80px;
     border-bottom: 2px solid transparent;
-  }
-  
-  .nav-item:hover {
-    border-bottom: 2px solid $colorRed;
+
+    &:hover {
+      border-bottom: 2px solid $colorRed;
+    }
   }
   
   .nav-links {
@@ -108,20 +108,20 @@ $colorRed: #f00946;
       padding: 2rem;
       width: 100%;
       display: table;
+
+      &:hover {
+        color: $colorRed;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+      }
     }
-  
-    .nav-links:hover {
-      color: $colorRed;
-      transform: scale(1.2);
-      transition: all 0.3s ease;
-    }
-  
-    .nav-item:hover {
-      border: none;
-    }
-  
+    
     .nav-item {
       width: 100%;
+
+      &:hover {
+        border: none;
+      }
     }
   
     .navbar-logo {

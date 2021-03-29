@@ -33,11 +33,23 @@ $transitionDefault: all .3s ease-out;
 .btn--medium {
     padding: $paddingButton;
     font-size: 18px;
+
+    &:hover {
+        transition: $transitionDefault;
+        background-color: var(--primary);
+        color: $blackDefault;
+    }
 }
 
 .btn--large {
     padding: 12px 26px;
     font-size: 20px;
+
+    &:hover {
+        transition: $transitionDefault;
+        background-color: var(--primary);
+        color: $blackDefault;
+    }
 }
 
 .btn--mobile {
@@ -51,25 +63,23 @@ $transitionDefault: all .3s ease-out;
     padding: 14px 20px;
     border: 1px solid var(--primary);
     transition: $transitionDefault;
+
+    &:hover {
+        transition: $transitionDefault;
+        background-color: var(--primary);
+        color: $blackDefault;
+    }
 }
 
 .btn--wide {
     padding: 12px 64px;
     font-size: 20px;
-}
 
-.btn--large:hover,
-.btn--medium:hover,
-.btn--mobile:hover {
-    transition: $transitionDefault;
-    background-color: var(--primary);
-    color: $blackDefault;
-}
-
-.btn--wide:hover {
-    color: var(--primary);
-    background-color: $redDefault;
-    transition: all .2s ease-out;
+    &:hover {
+        color: var(--primary);
+        background-color: $redDefault;
+        transition: all .2s ease-out;
+    }
 }
 
 @mixin buttonColors {
@@ -90,20 +100,20 @@ $transitionDefault: all .3s ease-out;
 .primary {
     background-color: $blackDefault;
     @include buttonColors();
-}
 
-.primary:hover {
-    background-color: var(--primary);
-    color: $blackDefault;
+    &:hover {
+        background-color: var(--primary);
+        color: $blackDefault;
+    }
 }
 
 .green {
     background-color: #25ce4a;
     @include buttonColors();
-}
 
-.green:hover {
-    background-color: $blackDefault;
+    :hover {
+        background-color: $blackDefault;
+    }
 }
 
 .btn-link {

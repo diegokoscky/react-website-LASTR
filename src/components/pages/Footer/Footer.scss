@@ -83,11 +83,11 @@
         color: var(--primary);
         text-decoration: none;
         margin-bottom: 0.5rem;
-    }
 
-    a:hover {
-        color: #e9e9e9;
-        transition: 0.3s ease-out;
+        &:hover {
+            color: #e9e9e9;
+            transition: 0.3s ease-out;
+        }
     }
 }
 
